@@ -18,6 +18,11 @@ config :ridex, RidexWeb.Endpoint,
   pubsub_server: Ridex.PubSub,
   live_view: [signing_salt: "tnyppa85"]
 
+# Configure the jwt token
+config :ridex, Ridex.Guardian,
+  issuer: "ridex",
+  secret_key: "j6MA6ttH2he0IJiBUE2fw0mU5QlIC5M6qxfl95x2c6GxnU/iB26PhDjfUfseG2lO"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
