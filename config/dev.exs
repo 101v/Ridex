@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :ridex, Ridex.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "123mrp.NET",
   database: "ridex_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
